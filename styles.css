@@ -34,7 +34,8 @@ section#form {
 }
 
 section.center,
-section div#obs {
+section div#obs,
+section#info div div {
   text-align: center;
 }
 
