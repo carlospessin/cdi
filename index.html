@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="./scripts.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./styles.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="box container-sm ">
+    <section class="mt-5 center">
+      <h1>Simulador de Rentabilidade CDI</h1>
+      <h4 class="mt-5">Taxa CDI: <span id="taxaPct" class="valor">&nbsp;</span></h4>
+      <small>Última atualização: <span id="data"></span> </small>
+    </section>
+
+    <section id="form" class="mt-5">
+      <div class="mb-2">
+        <label for="exampleFormControlInput1" class="form-label">Rendimento:</label>
+        <input id="rendimento" type="number" class="form-control" placeholder=" Taxa que seu banco paga na CDI">
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Investimento:</label>
+        <input id="investimento" type="number" class="form-control" placeholder="Valor que deseja investir">
+      </div>
+
+      <div class="d-flex justify-content-between">
+        <button id="novoCalculo" type="button" class="btn btn-primary disabled"
+          onClick="window.location.reload()">NovoCálculo</button>
+        <button id="calcular" type="button" class="btn btn-primary" onclick="calculo();">Calcular</button>
+      </div>
+    </section>
+
+  </div>
+  <section class="mt-5 pt-3 pb-3" id="info">
+    <div id="resultado" class="container-sm d-flex justify-content-between align-items-center">
+      <div class="mt-2">
+        Rendimento Diário: <h3 id="rendimentoDiario">R$ 0,00</h3>
+        <small>Taxa: <span id="taxaDiaria"></span></small>
+      </div>
+
+      <div class="mt-2">
+        Rendimento Mensal: <h3 id="rendimentoMensal">R$ 0,00</h3>
+        <small>Taxa: <span id="taxaMensal"></span></small>
+      </div>
+
+      <div class="mt-2">
+        Rendimento Anual: <h3 id="rendimentoAnual">R$ 0,00</h3>
+        <small>Taxa: <span id="taxaAnual"></span></small>
+      </div>
+    </div>
+    <div id="obs" class="container-sm d-flex justify-content-between align-items-center mt-5 ">
+      <small>
+        <hr>
+        Os valores de 'Rendimento Diário, Mensal e Anual' são projeções do rendimento bruto (% CDI) do seu dinheiro
+        guardado para esses períodos, não levando em conta os descontos de IOF e IR. <br>
+
+        Valor da taxa coletada do site B3.com.br.
+      </small>
+    </div>
+  </section>
+  <section id="footer" class="d-flex justify-content-center align-items-center">
+    <footer>
+      <hr>Made with <3 by <a href="https://carlospessin.github.io/">Carlos Pessin</a>
+    </footer>
+  </section>
+</body>
+
+</html>
