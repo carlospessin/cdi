@@ -5,7 +5,7 @@
 ---
 
 <p align="center">
-  <img src="src/assets/cdi.png">
+  <img src="src/assets/img.png">
 </p>
 
 ---
