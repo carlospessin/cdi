@@ -10,4 +10,4 @@
 
 ---
 
-Este projeto esta sobe a licença MIT - Veja o arquivo [LICENSE.md](https://github.com/carlospessin/CDI/blob/master/LICENSE.md) para detalhes.
+Este projeto esta sobe a licença MIT - Veja o arquivo [license.md](https://github.com/carlospessin/CDI/blob/master/license.md) para detalhes.
