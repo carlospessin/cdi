@@ -1,10 +1,12 @@
+@import "./corner.css";
+
 body {
   background-color: #4c5c96;
   color: #fff;
   overflow-x: hidden;
 }
 
-a {
+a#autor {
   text-decoration: none;
   color: #fff;
   font-weight: bold;
@@ -13,18 +15,18 @@ a {
   transition: bottom 0.2s, color 0.2s ease-in;
 }
 
-a:hover {
-  color: #fda90d;
+a#autor:hover {
+  color: #70b7fd;
   bottom: 3px;
   transition: bottom 0.2s, color 0.2s ease-in;
 }
-a#github {
+/* a#github {
   font-size: 30px;
   position: absolute;
   top: 0;
   right: 10px;
   height: 40px;
-}
+} */
 
 h1,
 h3 {
@@ -86,8 +88,4 @@ section footer {
   text-align: center;
   position: relative;
   z-index: 1;
-}
-
-svg {
-  width: 100%;
 }
