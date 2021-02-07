@@ -63,4 +63,4 @@ Sabendo das taxas diária, mensal e anual, fazemos o cálculo com o investimento
 
 ---
 
-Este projeto esta sobe a licença MIT - Veja o arquivo [license.md](https://github.com/carlospessin/CDI/blob/master/license.md) para detalhes.
+Este projeto esta sobe a licença [MIT](https://github.com/carlospessin/CDI/blob/master/license.md).
