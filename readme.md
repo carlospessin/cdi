@@ -17,9 +17,12 @@ O Simulador de Rentabilidad CDI conta com o consumo de uma API do B3 (Bolsa Bras
 ### Cálculos
 
 Para esse cálculo utilizaremos os seguintes valores:
+
+```
 CDI: 1.90
 Rendimento: 210
 Investimento: 1000
+```
 
 Primeiro é feito o cálculo de quanto o banco paga sobre o CDI.
 
@@ -57,5 +60,7 @@ Sabendo das taxas diária, mensal e anual, fazemos o cálculo com o investimento
 0.012 x 1000 = 12
 12 / 100 = 0.12 -> Rendimento Diário
 ```
+
+---
 
 Este projeto esta sobe a licença MIT - Veja o arquivo [license.md](https://github.com/carlospessin/CDI/blob/master/license.md) para detalhes.
