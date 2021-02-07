@@ -27,10 +27,10 @@ function numDias() {
 }
 
 function calculo() {
-  investimento = document.getElementById('investimento').value;
-
   rendimento = document.getElementById('rendimento').value;
   result = (CDI * rendimento);
+
+  investimento = document.getElementById('investimento').value;
 
   taxaAnual = result / 100;
   document.getElementById("taxaAnual").innerHTML = taxaAnual + ' %';
@@ -44,7 +44,6 @@ function calculo() {
   rendimentoDiario = investimento * taxaDiaria / 100;
   rendimentoDiario = rendimentoDiario.toFixed(2);
   rendimentoDiario = rendimentoDiario.toString().replace(".", ",");
-
   document.getElementById("rendimentoDiario").innerHTML = 'R$ ' + rendimentoDiario;
 
   rendimentoMensal = investimento * taxaMensal / 100;
@@ -58,6 +57,5 @@ function calculo() {
   document.getElementById("rendimentoAnual").innerHTML = 'R$ ' + rendimentoAnual;
 
   document.getElementById("calcular").disabled = true;
-
   document.getElementById("novoCalculo").classList.remove("disabled");
 }
