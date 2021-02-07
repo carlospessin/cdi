@@ -14,9 +14,16 @@ a {
 }
 
 a:hover {
-  color: #0d6efd;
+  color: #fda90d;
   bottom: 3px;
   transition: bottom 0.2s, color 0.2s ease-in;
+}
+a#github {
+  font-size: 30px;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  height: 40px;
 }
 
 h1,
@@ -46,6 +53,7 @@ section#info div div {
 
 section#info {
   background-color: #bdc4dd;
+  width: fit-content;
 }
 
 section#info::before {
